@@ -1,6 +1,13 @@
 module.exports.config = {
-  mainnet: {
-    dataSources: [],
+  base: {
+    dataSources: [
+      {
+        name: "pod",
+        template: "pod-ds.yaml",
+        address: "0xB00B5D137709a301283E225e536E85882Cfadd55",
+        startBlock: 20036664,
+      },
+    ],
     templates: [],
   },
   "base-sepolia": {
@@ -12,11 +19,6 @@ module.exports.config = {
         startBlock: 14175025,
       },
     ],
-    templates: [],
-  },
-
-  base: {
-    dataSources: [],
     templates: [],
   },
 };

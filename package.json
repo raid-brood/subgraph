@@ -8,7 +8,7 @@
     "prepare:sepolia": "node manifests/deploy-prep.js base-sepolia",
     "deploy:sepolia": "yarn prepare:sepolia && yarn build:all && graph deploy --studio proof-of-drink-base-sepolia",
     "prepare:base": "node manifests/deploy-prep.js base",
-    "deploy:base": "yarn prepare:base && yarn build:all && graph deploy --studio proof-of-drink-base"
+    "deploy:base": "yarn prepare:base && yarn build:all && graph deploy --studio proof-of-drink"
   },
   "dependencies": {
     "@graphprotocol/graph-ts": "^0.35.1",
